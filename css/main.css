@@ -1,0 +1,155 @@
+/* =====================
+   ALGEMENE INSTELLINGEN
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  background-color: #1e88e5;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img.x {
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.header-left h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* =====================
+   MAIN CONTENT
+===================== */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  color: #1e88e5;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =====================
+   LINKS
+===================== */
+a {
+  color: #1e88e5;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background-color: #1e88e5;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .header-left h1 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-right a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+  }
+}

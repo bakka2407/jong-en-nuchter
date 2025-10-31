@@ -1,0 +1,117 @@
+/* ==========================
+   ALGEMENE INSTELLINGEN
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  background-color: #1e88e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+header img.x {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* ==========================
+   SECTION
+========================== */
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  color: #1e88e5;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================
+   RESPONSIVE ONTWERP
+========================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header a {
+    display: inline-block;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+}
